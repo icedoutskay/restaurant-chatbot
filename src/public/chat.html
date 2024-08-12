@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Chatbot</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/chat.css" />
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="./js/extra.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">Order Chat Menu</div>
+        <div class="card-body">
+          <ul id="messages"></ul>
+          <form id="form">
+            <div class="input-group">
+              <input
+                id="message-box"
+                type="text"
+                class="form-control"
+                autocomplete="off"
+                placeholder="Type your message..."
+              />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
